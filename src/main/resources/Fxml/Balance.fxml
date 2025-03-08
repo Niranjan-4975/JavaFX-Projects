@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="442.0" styleClass="primary_container" stylesheets="@../Stylesheets/Balance.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BalanceController">
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <VBox.margin>
+            <Insets top="30.0" />
+        </VBox.margin>
+        <TextField fx:id="account_number_text_box" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="234.0" promptText="Enter Your Account Number...." styleClass="Account_Number">
+            <HBox.margin>
+                <Insets left="50.0" top="23.0" />
+            </HBox.margin>
+        </TextField>
+        <Button fx:id="search_button" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" styleClass="Search_Button" text="Search">
+            <HBox.margin>
+                <Insets top="23.0" />
+            </HBox.margin>
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </HBox>
+    <HBox prefHeight="150.0" prefWidth="442.0">
+        <Label fx:id="err_Label" wrapText="true">
+            <HBox.margin>
+                <Insets left="15.0" top="15.0" />
+            </HBox.margin>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </HBox>
+    <HBox prefHeight="45.0" prefWidth="200.0">
+        <Label fx:id="total_balance_amount_label" alignment="CENTER" prefHeight="34.0" prefWidth="200.0" text="Total Balance Amount :- " wrapText="true">
+            <font>
+                <Font size="19.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="18.0" top="6.0" />
+            </HBox.margin>
+        </Label>
+        <TextField fx:id="show_Balfield" alignment="CENTER" promptText="Your Balance.....">
+            <HBox.margin>
+                <Insets left="15.0" top="12.0" />
+            </HBox.margin>
+            <font>
+                <Font size="13.0" />
+            </font>
+        </TextField>
+    </HBox>
+    <Button fx:id="close_Button" alignment="CENTER" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #f07237;" text="Close">
+        <font>
+            <Font size="14.0" />
+        </font>
+        <VBox.margin>
+            <Insets left="120.0" top="40.0" />
+        </VBox.margin>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+</VBox>

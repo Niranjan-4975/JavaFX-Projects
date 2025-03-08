@@ -1,0 +1,27 @@
+/*Main primary V-box first one*/
+
+.primary_container{
+    -fx-background-color :#E0EC7F;
+    -fx-align : centre;
+}
+/*Designing table view*/
+
+.table_Sr_no{
+    -fx-background-color : #F9FB87;
+}
+
+.table_Date{
+    -fx-background-color : #F9FB87;
+}
+
+.table_Deposit{
+    -fx-background-color : #F9FB87;
+}
+
+.table_Withdrawal{
+    -fx-background-color : #F9FB87;
+}
+
+.table_Balance{
+    -fx-background-color : #F9FB87;
+}

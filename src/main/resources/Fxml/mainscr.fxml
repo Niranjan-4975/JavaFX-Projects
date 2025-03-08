@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane focusTraversable="true" styleClass="primary_container" stylesheets="@../Stylesheets/mainscr.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainScrController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <left>
+        <VBox BorderPane.alignment="CENTER_LEFT">
+            <Label styleClass="title_container_Text1" text="विद्यार्थी">
+                <VBox.margin>
+                    <Insets left="100.0" top="40.0" />
+                </VBox.margin>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" styleClass="title_container_Text2" text="बचत बँक">
+                <VBox.margin>
+                    <Insets left="80.0" />
+                </VBox.margin>
+            </Label>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="375.0" prefWidth="400.0">
+                <Button fx:id="credit_btn" graphicTextGap="5.0" layoutX="20.0" layoutY="195.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="92.0" styleClass="menu_container_Button" text="पैसे भरा" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="20.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="debit_btn" layoutX="264.0" layoutY="195.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: #CE2F2F;" styleClass="menu_container_Button" text="पैसे काढा" AnchorPane.bottomAnchor="220.0" AnchorPane.rightAnchor="20.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="passbook_btn" layoutX="140.0" layoutY="253.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" style="-fx-background-color: #EDAA0F;" styleClass="menu_container_Button" text="पासबुक" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="140.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="balance_btn" layoutX="135.0" layoutY="367.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="86.0" style="-fx-background-color: blue;" styleClass="menu_container_Button" text="शिल्लक" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="140.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="addacc_btn" layoutX="20.0" layoutY="307.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="88.0" styleClass="menu_container_Button" text="खाते जोडा" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="closeacc_btn" layoutX="255.0" layoutY="307.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: red;" styleClass="menu_container_Button" text="खाते बंद करा" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="20.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </AnchorPane>
+        </VBox>
+    </left>
+    <top>
+        <VBox alignment="TOP_RIGHT" nodeOrientation="LEFT_TO_RIGHT" styleClass="title_container" BorderPane.alignment="TOP_RIGHT">
+            <Label alignment="TOP_RIGHT" styleClass="title_container_Text0" text="इयत्ता सातवी                        बँक ऑफ झेडपीपी स्कूल, गोलेगाव">
+                <VBox.margin>
+                    <Insets right="10.0" top="20.0" />
+                </VBox.margin>
+            </Label>
+        </VBox>
+    </top>
+    <right>
+        <ImageView fitHeight="550.0" fitWidth="429.0" pickOnBounds="true" preserveRatio="true" styleClass="image_container" BorderPane.alignment="BOTTOM_RIGHT">
+            <Image url="@../images/kids.png" />
+        </ImageView>
+    </right>
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+            <Label styleClass="text1_container" text="सर्वात जास्त रक्कम जमा झालेला विद्यार्थी " wrapText="true">
+                <VBox.margin>
+                    <Insets top="100.0" />
+                </VBox.margin>
+                <graphic>
+                    <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="expression_image">
+                        <Image url="@../images/expression_girl.png" />
+                    </ImageView>
+                </graphic>
+            </Label>
+            <ImageView fx:id="show_Image" preserveRatio="true">
+                <VBox.margin>
+                    <Insets left="140.0" top="10.0" />
+                </VBox.margin>
+            </ImageView>
+            <Label fx:id="show_Name" alignment="CENTER" textFill="#0c08ff" wrapText="true">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="100.0" top="15.0" />
+                </VBox.margin>
+            </Label>
+            <Label fx:id="show_AccNo" textFill="#d015dd" wrapText="true">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+                <VBox.margin>
+                    <Insets left="100.0" top="15.0" />
+                </VBox.margin>
+            </Label>
+            <Label fx:id="show_TotalBal" textFill="#511313">
+                <VBox.margin>
+                    <Insets left="50.0" top="30.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label text="Application Design and Developed By: Niranjan (Contact ->niranjandungahu@gmail.com,7666184975)" wrapText="true">
+                <VBox.margin>
+                    <Insets left="40.0" top="20.0" />
+                </VBox.margin>
+                <font>
+                    <Font name="System Italic" size="9.5" />
+                </font>
+            </Label>
+        </VBox>
+    </center>
+</BorderPane>

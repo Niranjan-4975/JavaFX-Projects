@@ -1,0 +1,23 @@
+/*Main primary V-box first one*/
+
+.primary_container{
+    -fx-background-color :#E0EC7F;
+    -fx-align : centre;
+}
+
+/*Designing for Account number box, serach button and Balance amount*/
+
+.Account_Number{
+    -fx-border-style : solid;
+}
+
+.Search_Button{
+     -fx-background-color: #A3FBEA;
+        -fx-border-style: solid;
+        -fx-text-fill: #0F1312;
+        -fx-alignment: center;
+}
+
+.Balance{
+    -fx-border-style : solid;
+}

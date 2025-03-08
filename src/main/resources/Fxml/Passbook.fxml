@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="primary_container" stylesheets="@../Stylesheets/Passbook.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PassbookController">
+    <Label text="Passbook">
+        <font>
+            <Font size="37.0" />
+        </font>
+        <VBox.margin>
+            <Insets left="145.0" top="25.0" />
+        </VBox.margin>
+    </Label>
+    <HBox>
+        <VBox.margin>
+            <Insets top="20.0" />
+        </VBox.margin>
+        <TableView fx:id="passbook_table" styleClass="table">
+            <columns>
+                <TableColumn fx:id="sr_No" prefWidth="56.79998433589935" text="Sr No." />
+                <TableColumn fx:id="account_No" prefWidth="79.20008850097656" text="Account No" />
+                <TableColumn fx:id="withdrawal_Amount" prefWidth="110.39996337890625" text="Withdrawal" />
+                <TableColumn fx:id="deposit_Amount" prefWidth="89.60003662109375" text="Deposit" />
+                <TableColumn fx:id="txn_Date" prefWidth="139.199951171875" text="Transaction Date" />
+                <TableColumn fx:id="total_Balance" prefWidth="75.0" text="Balance" />
+            </columns>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </TableView>
+    </HBox>
+</VBox>

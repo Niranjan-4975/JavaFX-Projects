@@ -1,0 +1,25 @@
+.primary_container{
+    -fx-background-color :#E0EC7F;
+    -fx-align : centre;
+}
+
+
+/*Design for the button(Search, Close Account and cancel)*/
+.Search_Button{
+    -fx-background-color: #A3FBEA;
+    -fx-border-style: solid;
+    -fx-text-fill: #0F1312;
+    -fx-alignment: center;
+}
+.Close_Account_Button{
+    -fx-background-color:#E4CE61;
+    -fx-border-style: solid;
+    -fx-text-fill: #0F1312;
+    -fx-alignment: center;
+}
+.Cancel_Button{
+    -fx-background-color:#E4CE61;
+    -fx-border-style: solid;
+    -fx-text-fill: #0F1312;
+    -fx-alignment: center;
+}

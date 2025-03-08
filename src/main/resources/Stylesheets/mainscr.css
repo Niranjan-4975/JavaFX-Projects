@@ -1,0 +1,71 @@
+.primary_container{
+    -fx-background-color: #E0EC7F;
+    -fx-alignment: center;
+}
+
+/*.left_container{
+    -fx-background-color: #E0EC7F;
+    -fx-background-radius: 10;
+    -fx-effect: drop-shadow(#AAAAAA, 5, 0, 0, 4);
+} */
+
+/* Title Section */
+.title_container{
+    -fx-background-color: transparent;
+}
+
+.title_container_Text0{
+    -fx-text-fill: linear-gradient(to bottom, #de52cc, #da58d0, #d65ed5, #d264d8, #ce69dc, #d664d2, #dc5fc7, #e15bbd, #eb4ea0, #ef4682, #ec4465, #e34949);
+    -fx-font-size: 4em;
+    -fx-font-weight: bold;
+}
+.title_container_Text1{
+    -fx-text-fill: #8707EB;
+    -fx-font-size: 4em;
+    -fx-font-weight: bold;
+}
+.title_container_Text2{
+    -fx-text-fill: linear-gradient(to bottom, #F209e4, #DB2EDA, #C63CCF, #B145C3, #9E4AB5);
+    -fx-font-size: 4em;
+    -fx-font-weight: bold;
+}
+
+/*Navigation Section */
+.menu_container{
+    -fx-padding: 10 10 10 20;
+    -fx-spacing: 40;
+}
+
+.menu_container_Button{
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-background-color: green;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center;
+}
+
+.menu_container Button:hover{
+    -fx-cursor: hand;
+}
+
+/* Right Image Section */
+.right_container{
+    -fx-alignment: right;
+}
+.image_container{
+    -fx-float: right;
+    -fx-alignment: right;
+    -fx-display: flex;
+    -fx-justify-content: flex-end; /* Aligns to the right */
+    -fx-align-items: flex-end;
+}
+
+/* Center text and views section */
+.text1_container{
+    -fx-text-fill: red;
+    -fx-font-size: 2em;
+}
+.expression_image{
+    -fx-background-color: transparent;
+}

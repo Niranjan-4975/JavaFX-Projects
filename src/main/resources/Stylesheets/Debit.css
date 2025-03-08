@@ -1,0 +1,37 @@
+/*Main primary V-box first one*/
+
+.primary_container{
+    -fx-background-color :#E0EC7F;
+    -fx-align : centre;
+}
+
+/*Designing for input box and serach button*/
+
+.Account_Number{
+    -fx-border-style : solid;
+}
+
+.Search_Button{
+     -fx-background-color: #A3FBEA;
+        -fx-border-style: solid;
+        -fx-text-fill: #0F1312;
+        -fx-alignment: center;
+}
+
+/*Designing for input box for entering the amount, submit and cancel button*/
+.Debit_Amount{
+    -fx-border-style : solid;
+}
+
+.Submit_Button{
+    -fx-background-color:#E4CE61;
+    -fx-border-style: solid;
+    -fx-text-fill: #0F1312;
+    -fx-alignment: center;
+}
+.Cancel_Button{
+    -fx-background-color:#E4CE61;
+    -fx-border-style: solid;
+    -fx-text-fill: #0F1312;
+    -fx-alignment: center;
+}

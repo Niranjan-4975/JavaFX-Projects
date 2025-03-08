@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox styleClass="primary_container" stylesheets="@../Stylesheets/Credit.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreditController">
+    <HBox prefHeight="90.0" prefWidth="200.0">
+        <VBox.margin>
+            <Insets top="18.0" />
+        </VBox.margin>
+        <TextField fx:id="account_number" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Type Your Account Number Here...." styleClass="Account_Number">
+            <HBox.margin>
+                <Insets left="35.0" top="35.0" />
+            </HBox.margin>
+        </TextField>
+        <Button fx:id="search_button" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" styleClass="Search_Button" text="Search">
+            <HBox.margin>
+                <Insets top="35.0" />
+            </HBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </HBox>
+    <AnchorPane prefHeight="180.0" prefWidth="440.0">
+        <Label fx:id="acc_nameLabel" text="Account Holder Name :-" wrapText="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="reg_noLabel" layoutX="10.0" layoutY="10.0" text="Registration Number :-" wrapText="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="acc_noLabel" layoutX="10.0" layoutY="10.0" text="Account Number :-" wrapText="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="show_name" layoutX="221.0" layoutY="15.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="show_regNo" layoutX="221.0" layoutY="55.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="show_accNo" layoutX="221.0" layoutY="95.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="err_label" layoutX="26.0" layoutY="141.0" textFill="RED" wrapText="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+    <HBox prefHeight="60.0" prefWidth="200.0">
+        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" text="Credit Amount:-" wrapText="true">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="50.0" top="12.0" />
+            </HBox.margin>
+        </Label>
+        <TextField fx:id="credit_text_box" prefHeight="30.0" prefWidth="180.0" promptText="Type Amount to Credit......" styleClass="Credit_Amount">
+            <HBox.margin>
+                <Insets left="10.0" top="10.0" />
+            </HBox.margin></TextField>
+    </HBox>
+    <HBox prefHeight="90.0" prefWidth="200.0">
+        <Button fx:id="submit_button" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" styleClass="Submit_Button" text="Submit">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="60.0" top="20.0" />
+            </HBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="cancel_button" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" styleClass="Cancel_Button" text="Cancel">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="60.0" top="20.0" />
+            </HBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </HBox>
+</VBox>
