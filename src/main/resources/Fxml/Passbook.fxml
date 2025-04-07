@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -14,6 +15,17 @@
             <Insets left="145.0" top="25.0" />
         </VBox.margin>
     </Label>
+   <Button fx:id="export_Excel_button" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: #0de038; -fx-text-fill: #e00d23;" text="Get Excel" textFill="#be1a1a" wrapText="true">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+      <VBox.margin>
+         <Insets left="450.0" />
+      </VBox.margin>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
     <HBox>
         <VBox.margin>
             <Insets top="20.0" />

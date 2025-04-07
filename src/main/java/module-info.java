@@ -4,6 +4,7 @@ module MaziBachatBank {
     requires transitive javafx.fxml;
     requires transitive javafx.graphics;
     requires transitive org.xerial.sqlitejdbc;
+    requires org.apache.poi.ooxml;
 
     opens main to javafx.fxml;
     opens Controllers to javafx.fxml;
