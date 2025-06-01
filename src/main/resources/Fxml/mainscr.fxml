@@ -65,7 +65,7 @@
     </top>
     <right>
         <ImageView fitHeight="550.0" fitWidth="429.0" pickOnBounds="true" preserveRatio="true" styleClass="image_container" BorderPane.alignment="BOTTOM_RIGHT">
-            <Image url="@../images/kids.png" />
+            <Image url="@../Images/kids.png" />
         </ImageView>
     </right>
     <center>
@@ -76,7 +76,7 @@
                 </VBox.margin>
                 <graphic>
                     <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="expression_image">
-                        <Image url="@../images/expression_girl.png" />
+                        <Image url="@../Images/expression_girl.png" />
                     </ImageView>
                 </graphic>
             </Label>

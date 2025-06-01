@@ -30,8 +30,8 @@ public class MaziBachatBankApplication extends Application {
     public static void main(String[] ignoredArgs) {
         try {
             launch();
-        } catch (Exception e) {
-                e.printStackTrace();
+        } catch (NumberFormatException e) {
+                e.getLocalizedMessage();
         }
     }
 }

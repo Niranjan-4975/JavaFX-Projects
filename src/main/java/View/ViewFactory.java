@@ -10,11 +10,12 @@ public class ViewFactory {
 
     private Stage currentStage;
 
-    public ViewFactory(){}
+    public ViewFactory() {
+    }
 
     //Creating stage
-    private void createStage(FXMLLoader fxmlLoader){
-        if(currentStage != null){
+    private void createStage(FXMLLoader fxmlLoader) {
+        if (currentStage != null) {
             currentStage.close();
         }
         Scene scene = null;
@@ -32,42 +33,42 @@ public class ViewFactory {
     }
 
     //Closing Stage via Cancel button
-    public void closeStage(Stage stage){
+    public void closeStage(Stage stage) {
         stage.close();
     }
 
     // Credit Window Loading
-    public void showCreditWindow(){
+    public void showCreditWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/Credit.fxml"));
         createStage(fxmlLoader);
     }
 
     // Debit Window Loading
-    public void showDebitWindow(){
+    public void showDebitWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/Debit.fxml"));
         createStage(fxmlLoader);
     }
 
     //Passbook Window Loading
-    public void showPassbookWindow(){
+    public void showPassbookWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/Passbook.fxml"));
         createStage(fxmlLoader);
     }
 
     //Add Account Window Loading
-    public void showAddAccountWindow(){
+    public void showAddAccountWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/AddAccount.fxml"));
         createStage(fxmlLoader);
     }
 
     //Close Account Window Loading
-    public void showCloseAccountWindow(){
+    public void showCloseAccountWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/CloseAccount.fxml"));
         createStage(fxmlLoader);
     }
 
     //Balance Window Loading
-    public void showBalanceWindow(){
+    public void showBalanceWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/Balance.fxml"));
         createStage(fxmlLoader);
     }

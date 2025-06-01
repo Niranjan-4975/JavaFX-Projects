@@ -4,6 +4,41 @@
     -fx-background-color :#E0EC7F;
     -fx-align : centre;
 }
+/* Main primary V-box second one*/
+.responsive-label {
+    -fx-font-size: 3em;
+    -fx-alignment: center;
+}
+
+.table {
+    -fx-font-size: 1em;
+    -fx-table-cell-border-color: transparent;
+}
+
+.topLabel{
+    -fx-background-color: #e3e86d;
+}
+.exportBtn{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 5;
+}
+.exportControls{
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+.generateExcelBtn{
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 5;
+}
 
 /*Designing table view*/
 
